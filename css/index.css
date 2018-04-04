@@ -58,6 +58,7 @@ hr {
  */
 a {
   text-decoration: none;
+  color: inherit;
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
@@ -303,9 +304,145 @@ input[type="submit"] {
   -webkit-appearance: none;
   border-radius: 0; }
 
-@font-face {
-  font-family: '';
-  src: url("") format("eot");
-  src: url("") format("svg");
-  src: url("") format("ttf");
-  src: url("") format("woff"); }
+/*FLEX*/
+.log-in {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333333;
+  height: 100vh;
+  background: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .log-in__wrap {
+    background-color: #fff;
+    max-width: 840px;
+    width: 100%;
+    height: 500px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .log-in__wrap:before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      height: 2px;
+      background-color: #e62b1e;
+      width: 100%; }
+    .log-in__wrap h1 {
+      height: 85px;
+      line-height: 85px;
+      font-size: 31px; }
+    .log-in__wrap .title {
+      position: relative;
+      width: 100%;
+      height: 330px;
+      padding-top: 40px;
+      background-color: #f3f3f3;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .log-in__wrap .title:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 250px;
+        width: 1px;
+        background-color: #000; }
+      .log-in__wrap .title .btn {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 300px;
+        color: #fff;
+        border-radius: 2px;
+        background-color: red;
+        position: relative; }
+      .log-in__wrap .title .btn--blue {
+        background-color: #3e5b96; }
+      .log-in__wrap .title .btn--red {
+        background-color: #dd5342; }
+      .log-in__wrap .title .btn--black {
+        background-color: #333333; }
+      .log-in__wrap .title .btn--width-100px {
+        width: 100px; }
+      .log-in__wrap .title .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        flex-wrap: wrap;
+        height: 100%;
+        max-width: 420px;
+        width: 100%; }
+        .log-in__wrap .title .social .btn {
+          margin-left: 60px;
+          margin-bottom: 20px; }
+          .log-in__wrap .title .social .btn p {
+            margin-left: 30px; }
+          .log-in__wrap .title .social .btn img {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%); }
+      .log-in__wrap .title .form {
+        max-width: 420px;
+        width: 100%;
+        height: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        flex-wrap: wrap; }
+        .log-in__wrap .title .form > label {
+          height: 23px; }
+        .log-in__wrap .title .form > input {
+          margin-bottom: 23px;
+          padding-left: 10px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 20px;
+          width: 300px;
+          border: 1px solid #dddddd; }
+        .log-in__wrap .title .form #login:invalid {
+          border-color: #DD2C00;
+          color: #DD2C00; }
+        .log-in__wrap .title .form .remember_me {
+          margin-bottom: 20px; }
+        .log-in__wrap .title .form .dispatch {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap; }
+          .log-in__wrap .title .form .dispatch input {
+            border: none;
+            padding: 0; }
+          .log-in__wrap .title .form .dispatch a {
+            text-decoration: underline; }
+    .log-in__wrap footer {
+      font-size: 18px;
+      height: 85px;
+      line-height: 85px;
+      color: #666666; }
+      .log-in__wrap footer a {
+        color: #000;
+        text-decoration: underline; }
+    .log-in__wrap .close {
+      position: absolute;
+      top: 15px;
+      right: 15px; }

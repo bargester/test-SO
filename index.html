@@ -6,6 +6,52 @@
     <title>Document</title>
 </head>
 <body>
-
+    <section class="log-in">
+        <div class="log-in__wrap">
+            <h1>Log in to the Site</h1>
+            <div class="title">
+                <div class="social">
+                    <a href="#">
+                        <div class="btn btn--blue">
+                            <p>Log in with Facebook</p>
+                            <img src="img/log-in/facebook.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="btn btn--red">
+                            <p>Log in with Google+</p>
+                            <img src="img/log-in/google-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <form method="post" action="#" class="form">
+                    <label for="login" class="login">Login</label>
+                    <input type="text" class="login" id="login" autofocus required="required" placeholder="only letters or numbers" pattern="[A-Za-zА-Яа-яЁё0-9-_\.]{1,20}$">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required="required" placeholder="must have 5 characters" pattern="[A-Za-zА-Яа-яЁё0-9-@#$%^&*()!_\.]{5,50}$">
+                    <div class="remember_me">
+                        <input type="checkbox" id="remember_me">
+                        <label for="remember_me">Remember me</label>
+                    </div>
+                    <div class="dispatch">
+                        <a href="#">
+                            <input type="submit" value="Log in" class="btn btn--black btn--width-100px">
+                        </a>
+                        <p>
+                            <a href="#">
+                                Need help logging in?
+                            </a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <footer >
+                Dont have an account yet? <a href="#">Sign up</a>
+            </footer>
+            <a href="#">
+                <img class="close" src="img/log-in/close.svg" alt="">
+            </a>
+        </div>
+    </section>
 </body>
 </html>
