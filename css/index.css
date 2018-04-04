@@ -329,6 +329,11 @@ input[type="submit"] {
     justify-content: start;
     align-items: center;
     flex-wrap: nowrap; }
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+      .log-in__wrap {
+        height: 615px;
+        max-width: 480px;
+        width: 100%; } }
     .log-in__wrap:before {
       content: '';
       position: absolute;
@@ -351,6 +356,15 @@ input[type="submit"] {
       justify-content: center;
       align-items: center;
       flex-wrap: nowrap; }
+      @media only screen and (min-width: 768px) and (max-width: 1199px) {
+        .log-in__wrap .title {
+          padding-top: 0;
+          height: 445px;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: start;
+          align-items: center;
+          flex-wrap: nowrap; } }
       .log-in__wrap .title:before {
         content: '';
         position: absolute;
@@ -360,6 +374,12 @@ input[type="submit"] {
         height: 250px;
         width: 1px;
         background-color: #000; }
+        @media only screen and (min-width: 768px) and (max-width: 1199px) {
+          .log-in__wrap .title:before {
+            top: 295px;
+            height: 1px;
+            max-width: 300px;
+            width: 100%; } }
       .log-in__wrap .title .btn {
         height: 40px;
         line-height: 40px;
@@ -371,10 +391,19 @@ input[type="submit"] {
         position: relative; }
       .log-in__wrap .title .btn--blue {
         background-color: #3e5b96; }
+        @media only screen and (min-width: 1200px) {
+          .log-in__wrap .title .btn--blue:hover {
+            background-color: #385388; } }
       .log-in__wrap .title .btn--red {
         background-color: #dd5342; }
+        @media only screen and (min-width: 1200px) {
+          .log-in__wrap .title .btn--red:hover {
+            background-color: #cd4c3c; } }
       .log-in__wrap .title .btn--black {
         background-color: #333333; }
+        @media only screen and (min-width: 1200px) {
+          .log-in__wrap .title .btn--black:hover {
+            background-color: #666666; } }
       .log-in__wrap .title .btn--width-100px {
         width: 100px; }
       .log-in__wrap .title .social {
@@ -386,6 +415,9 @@ input[type="submit"] {
         height: 100%;
         max-width: 420px;
         width: 100%; }
+        @media only screen and (min-width: 768px) and (max-width: 1199px) {
+          .log-in__wrap .title .social {
+            height: 180px; } }
         .log-in__wrap .title .social .btn {
           margin-left: 60px;
           margin-bottom: 20px; }
@@ -407,6 +439,13 @@ input[type="submit"] {
         justify-content: flex-start;
         align-items: start;
         flex-wrap: wrap; }
+        @media only screen and (min-width: 768px) and (max-width: 1199px) {
+          .log-in__wrap .title .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            flex-wrap: wrap; } }
         .log-in__wrap .title .form > label {
           height: 23px; }
         .log-in__wrap .title .form > input {
@@ -434,6 +473,9 @@ input[type="submit"] {
             padding: 0; }
           .log-in__wrap .title .form .dispatch a {
             text-decoration: underline; }
+            @media only screen and (min-width: 1200px) {
+              .log-in__wrap .title .form .dispatch a:hover {
+                color: #666666; } }
     .log-in__wrap footer {
       font-size: 18px;
       height: 85px;
@@ -442,6 +484,9 @@ input[type="submit"] {
       .log-in__wrap footer a {
         color: #000;
         text-decoration: underline; }
+        @media only screen and (min-width: 1200px) {
+          .log-in__wrap footer a:hover {
+            color: #666666; } }
     .log-in__wrap .close {
       position: absolute;
       top: 15px;
