@@ -131,7 +131,7 @@
           margin-bottom: 20px;
           @include res('mob') {
             margin-bottom: 5px;
-            margin-left: 5px;
+            margin-left: 10px;
           }
           p{
             margin-left: 30px;
@@ -155,8 +155,8 @@
           @include flex(column, center, start, wrap);
         }
         @include res('mob') {
-          padding-right: 5px;
-          padding-left: 5px;
+          padding-right: 10px;
+          padding-left: 10px;
           max-width: 320px;
           width: 100%;
            @include flex(column, center, start, wrap);
